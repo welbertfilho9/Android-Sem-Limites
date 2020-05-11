@@ -1,0 +1,43 @@
+body {
+    background-image: url("https://mcdn.wallpapersafari.com/medium/60/68/vY1obQ.jpg");
+    background-size: auto 100vh ;
+    font-family: arial black;
+    color: red;
+    height: 100vh;
+  }
+  
+  .menu{
+    background-image: url("https://img.elo7.com.br/product/zoom/28B28C9/fundo-fotografico-em-tecido-textura-vermelha-2-60x1-50-painel-sublimado.jpg");
+    background-size: auto 100vh;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style:none;
+  }
+  
+  a{
+   color:green; 
+   text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+  }
+  
+  
+  
