@@ -9,7 +9,7 @@ body {
     background-image: url("https://mcdn.wallpapersafari.com/medium/60/68/vY1obQ.jpg");
     background-size: auto 100vh ;
     font-family: 'Oswald', sans-serif;
-    color: red;
+    color: whitesmoke;
     height: 100vh;
 }
 
@@ -30,11 +30,17 @@ html{
 }
 
 header {
-  height: 70vh;
+  background-image: url("https://avatanplus.com/files/resources/original/580bc3e87de98157edf54444.png");
+  background-size: 100% 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }  
+
+.contato{
+ background-color: rgb(9, 211, 9);
+}
 
 #logocentral {
   text-align: center;
@@ -48,7 +54,7 @@ header {
   
 .menu{
    position: fixed;
-   background-image: url("https://img.elo7.com.br/product/zoom/28B28C9/fundo-fotografico-em-tecido-textura-vermelha-2-60x1-50-painel-sublimado.jpg");
+   background-color: rgb(52, 6, 255);
    background-size: auto 100vh;
    width: 100vw;
    top: 0;
@@ -110,7 +116,7 @@ header {
     font-family: 'Anton', sans-serif;
     -webkit-text-stroke-width: 0.2px; 
     -webkit-text-stroke-color: #ffffff;
-    color: red;
+    color: black;
   }
 
   .img-portfolio{
@@ -436,6 +442,9 @@ a.youtube {
   margin-bottom: 9vh;
 }
 
-.contato {
-  margin-bottom: 4vh;
+
+.tracinho{
+  min-width: 100vw;
+  height: 1vh;
+  background-color: #ffffff;
 }
