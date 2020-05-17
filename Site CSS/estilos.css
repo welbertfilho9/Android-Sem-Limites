@@ -13,6 +13,10 @@ body {
     height: 100vh;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1300px) {
   body{
     font-size: 2vw;
@@ -144,23 +148,28 @@ header {
 
  
  .videos1{
+   margin-left: auto;
+   margin-right: auto;
    min-height: 100vh;
    padding: 0.5em;
    border: 0.5em;
  }
 
+ .cursos .grid,
  .videos1 .grid {
     display: grid;
     gap: 3vh;
  }
 
  @media (min-width: 1300px) {
+   .cursos .grid,
    .videos1 .grid {
     grid-template-columns: 40vw 40vw;
     justify-content: center;
   }
  }
 
+ .cursos figure,
  .videos1 figure{
    text-align: center;
  }
@@ -173,6 +182,8 @@ header {
  }
 
  .contato{ 
+  margin-left: auto;
+  margin-right: auto; 
   min-width: 100vw; 
   padding: 0.5em;
   border: 0.5em;
@@ -183,8 +194,8 @@ header {
   text-shadow: 0 0 12px white;
 }
 
-#logo:active,
-#logo:hover{
+.logosobre:active,
+.logosobre:hover{
   transform: scale(1.1);
 }
 
@@ -217,7 +228,214 @@ header {
   color: orange;
 }
 
-.pad:active,
-.pad:hover{
-  transform: scale(1.1);
+
+a.instagram,
+a.facebook,
+a.envelope,
+a.youtube {
+  padding-right:2vw;
+  padding-left: 2vw;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 2vw;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.sobre{
+  padding: 0.5em;
+  border: 0.5em;
+}
+
+.cursos{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5em;
+  border: 0.5em;
+}
+
+.justo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre p{
+  font-family: 'Oswald', sans-serif;
+  color: orange;
+  text-indent: 5vw;
+  margin-bottom: 1vh;
+  text-align: justify;
+  font-size: 3vh;
+  text-shadow: 0 0 7px red;
+}
+
+@media (min-width:1000px){
+  .justo{
+    max-width: 1000px; 
+  }
+}
+
+.sobre .logosobre{
+  width: auto;
+  height: 15vw;
+  float: left;
+  margin-right: 3vw;
+}
+
+.sobre h2{
+  font-size: 5vh;
+   padding-bottom: 9vh;
+   font-family: 'Roboto', sans-serif;
+}
+
+.mudacor{
+  color: orange;
+}
+
+.mudacor:hover,
+.mudacor:active{
+  color: aqua;
+}
+
+@media (max-width:750px){
+  .sobre .logosobre{
+    float: none;
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+  }
+}
+
+.mylogo {
+  -webkit-animation:spin 5s linear infinite;
+  -moz-animation:spin 5s linear infinite;
+  animation:spin 5s linear infinite;
+}
+@-moz-keyframes spin { 
+  40% { -moz-transform: rotate(360deg); }
+  100% {-moz-transform: rotate(360deg);}
+}
+@-webkit-keyframes spin { 
+  40% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 40% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+.site-subtitle{
+  text-decoration: underline;
+}
+
+.site-subtitle:hover,
+.site-subtitle:active{
+  color: yellow;
+}
+
+.cursos h2{
+  font-size: 5vh;
+   padding-bottom: 9vh;
+   font-family: 'Roboto', sans-serif;
+}
+
+.cursos figure{
+  margin-bottom: 9vh;
+}
+
+.sobre{
+  margin-bottom: 9vh;
+}
+
+.contato {
+  margin-bottom: 4vh;
 }

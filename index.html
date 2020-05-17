@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,33 @@
      <script src="https://kit.fontawesome.com/28f765f4e0.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
   <header>
     <nav class="menu">
       <ul>
+         <li><a href="#sobre">Sobre</a></li>
          <li><a href="#videos">Vídeos</a></li>
-         <li><a href="https://bit.ly/2JQZou2">Inscreva-se</a></li>
+         <li><a href="#cursosgratis">Cursos Grátis</a></li>
          <li><a href="#contato">Contato</a></li>
       </ul>
     </nav> 
     <div id="logocentral" class="titulo">
         <a href="https://www.youtube.com/channel/UCnWG8YD3tlsU_Pg-sb6YWCw/">
-           <img id="logo" src=".\img\1578318745419.png" >
+           <img id="logo" src=".\img\1578318745419.png" alt="Android Sem Limites" class="mylogo" >
         </a>  
            <h1 class="site-title">Android Sem Limites</h1>
         <a href="https://bit.ly/2JQZou2">
@@ -28,6 +43,23 @@
         </a>
     </div>
   </header>
+  <section class="sobre" id="sobre">
+    <h2>Sobre</h2>
+    <figure class="justo">
+
+      <img src=".\img\1578318745419.png" alt="Android Sem Limites" class="logosobre">
+
+      <p><a href="https://www.youtube.com/channel/UCnWG8YD3tlsU_Pg-sb6YWCw/" target="_blank" class="mudacor">Android Sem Limites</a> é um canal que está relacionado sobretudo ao mundo Android. Mesmo assim ele possui uma diversidade imensa de conteúdos como mágica, origami, futebol, cursos, rap, tutoriais, downloads, etc.</p>
+
+      <p>O canal foi criado no início de 2017 (se chamava Descobrindo o Mundo) e os primeiros vídeos foram gravados em uma celular que gravava em 240p. Fui postando bastante vídeos e comecei a ganhar uma grande quantidade de inscritos e visualizações, mas devido a alguns problemas com o YouTube meu canal acabou sendo banido no fim de 2018.</p>
+
+      <p>Fiquei bastante triste com esse banimento e somente no início de 2020 criei um novo canal (chamado Android Sem Limites) e comecei a postar vídeos. Tudo estava indo bem, até que resolvi mandar um e-mail pro YouTube pedindo pra devolver meu canal antigo. No dia seguinte, tive uma grande surpresa ao ver que o YouTube me mandou um e-mail falando que não quebrei nenhuma regra e estava devolvendo meu canal.</p>
+      
+      <p>Então resolvi voltar pro meu canal antigo e colocar conteúdo nele. Estou com uma meta de postar pelo menos um vídeo por semana (toda quarta-feira), mas não sei por quanto tempo vou conseguir cumprir isso. O canal que ainda se chama Descobrindo o Mundo vai passar a ser Android Sem Limites, pois já me acostumei com isso.</p>
+
+      <p>Esse site foi feito com o conhecimento adquirido no curso Imersão CSS que insclusive foi postado no canal e você também pode aprender.</p>
+    </figure>
+  </section>
   <section class="videos1" id="videos">
     <h2>Vídeos</h2>
 
@@ -54,6 +86,20 @@
     </figure>
     </div>
    </section> 
+   <section class="cursos" id="cursosgratis">
+     <h2>Cursos Grátis</h2>
+     <div class="grid">
+      <figure>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLlP24HtwcC6QYFUSyEbNczdWqdtR2xOTD" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos">
+        </iframe>  
+           <figcaption class="leg">COMO BAIXAR GB WHATSAPP ATUALIZADO</figcaption>
+       </figure>
+       <figure>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLlP24HtwcC6StZYNiEYBunGS3VUMHAppg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videos"></iframe>
+           <figcaption class="leg">COMO GANHAR INSCRITOS NO YOUTUBE! (TRUQUE INCRÍVEL)</figcaption>
+       </figure>
+     </div>
+   </section>
    <section class="contato" id="contato">
     <h2>Contato</h2>
     <div class="grid icons">
@@ -70,7 +116,8 @@
         <i class="far fa-envelope pad"></i>
       </a>
     </div>
-  </section> 
+  </section>
+  </div> 
          
             
 </body>
